@@ -1,0 +1,8 @@
+.navbar{background: #563C7D;} 
+.nav-item:hover{text-decoration: underline;}
+#pic-blog{
+	background-image: url("font1.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
