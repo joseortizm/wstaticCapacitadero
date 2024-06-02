@@ -121,6 +121,11 @@
   margin: auto;
   width: 60%;
 }
+.contenido{
+  --bd-pink-rgb: 214,51,132;
+  background-color: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+}
+
 
  </style>
 </head>
@@ -146,7 +151,7 @@
   </nav>
   <hr>
   <main>
-    <div class="">
+    <div class="contenido">
       <h2 style="color:rgb(0,0,0);">Cambiando la vida de más personas</h2>
       <p>"Creemos en un mundo donde todos tenemos las mismas oportunidades. Queremos proporcionar educación accesible en 
         tecnología y ciencias de la computación a personas con discapacidad."</p>
@@ -161,6 +166,7 @@
               "para mí y para mis compañeras un espacio seguro donde podemos aprender una profesión. 
               Es una oportunidad para cambiar nuestras vidas, sin importar quiénes somos ni de dónde venimos."
             </p>
+            <img width="50" src="img/davidlopez.jpg" class="float-start" alt="..." style="border-radius:50%;">
             <span style="color:rgb(0,0,0)"><b>David Lopez 1</b></span>
           </div> 
         </div>
@@ -170,6 +176,7 @@
             "para mí y para mis compañeras un espacio seguro donde podemos aprender una profesión. 
             Es una oportunidad para cambiar nuestras vidas, sin importar quiénes somos ni de dónde venimos."
           </p>
+            <img width="50" src="img/davidlopez.jpg" class="float-start" alt="..." style="border-radius:50%;">
             <span style="color:rgb(0,0,0)"><b>David Lopez 2</b></span>
           </div>
         </div>
@@ -183,6 +190,7 @@
               "para mí y para mis compañeras un espacio seguro donde podemos aprender una profesión. 
               Es una oportunidad para cambiar nuestras vidas, sin importar quiénes somos ni de dónde venimos."
             </p>
+            <img width="50" src="img/davidlopez.jpg" class="float-start" alt="..." style="border-radius:50%;">
             <span style="color:rgb(0,0,0)"><b>David Lopez 3</b></span>
           </div>         
         </div>
@@ -192,6 +200,7 @@
               "para mí y para mis compañeras un espacio seguro donde podemos aprender una profesión. 
               Es una oportunidad para cambiar nuestras vidas, sin importar quiénes somos ni de dónde venimos."
             </p>
+            <img width="50" src="img/davidlopez.jpg" class="float-start" alt="..." style="border-radius:50%;">
             <span style="color:rgb(0,0,0)"><b>David Lopez 4</b></span>
           </div> 
         </div>
@@ -201,8 +210,8 @@
     <div class="pt-5 pb-5">
       <h2 style="color:rgb(0,0,0);" class="text-center">¡Hemos iniciado clases de Python!</h2>
       <div class="row" style="padding: 20px;">
-        <div class="col-12 col-sm-3"></div>
-        <div class="centro col-12 col-sm-3 text-center pt-3 pb-3" style="background-color:rgb(230,230,250);border-radius:10px;">
+        <div class="col-12 col-sm-4"></div>
+        <div class="centro col-12 col-sm-4 text-center pt-3 pb-3" style="background-color:rgb(230,230,250);border-radius:10px;">
           <div>
             <h3 class="">Sesión de bienvenida</h3>
             <p class="">
@@ -211,33 +220,72 @@
             </p>
             <button class="btn" id="btn-modal" data-toggle="modal" data-target=".bd-example-modal-lg" type="buttom" style="background-color:#F3F3FD;border:1px solid #47007f">Mira el video</button>
             <!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Video de bienvenida - Curso Python 1 - 2024</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9ChnQt4rE?si=UNVIQrpqnHSY0d76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+            <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Video de bienvenida - Curso Python 1 - 2024</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Le9ChnQt4rE?si=UNVIQrpqnHSY0d76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+<!--
         <div class="col-12 col-sm-3 mt-sm-0 mt-3">
           <img src="img/reuBienvenida2024-1.png" alt="" class="img-fluid mx-auto d-block" style="border-radius: 10px;"> 
         </div>
-        <div class="col-12 col-sm-3"></div>
+      -->
+        <div class="col-12 col-sm-4"></div>
       </div>
   </div>
+  <div class="row pt-5 pb-5 text-center"  style="background-color: rgb(242,242,242);">
+    <div class="col-12 col-sm-3"></div>
+    <div class="col-12 col-sm-6">
+    <h2 style="color:rgb(0,0,0);" class="text-center">¡Únete a nosotros y haz la diferencia!</h2>
+    <p>
+    Somos una organización sin fines de lucro que proporciona educación accesible en tecnología y 
+    ciencias de la computación a personas con discapacidad. Ampliamos el acceso
+    de conocimiento a personas que no tienen esa oportunidad. Hemos realizado cursos a estudiantes con discapacidad fisica,
+    visual, auditiva y sindrome de down. Sin embargo, no podemos lograr nuestros objetivos sin el apoyo de personas como tú.
+  </p> 
+  <p>¿Te gustaría formar parte de nuestro equipo y contribuir a cambiar vidas? </p>
+  <ol>
+    <li>Contribuciones económicas: Tu generosidad nos permite llevar a cabo proyectos que impactan positivamente en 
+      nuestra comunidad. Cada donación, por pequeña que sea, marca la diferencia.</li>
+      <li>
+        Tiempo voluntario: Si tienes tiempo disponible y ganas de ayudar, ¡te necesitamos! Desde actividades de voluntariado 
+        hasta eventos y campañas, hay muchas formas de colaborar según tu disponibilidad.
+      </li>
+      <li>
+        Habilidades profesionales: ¿Eres experto en algún área que pueda beneficiar a nuestra asociación? Desde marketing y diseño 
+        hasta contabilidad y desarrollo web, valoramos tu experiencia y habilidades.
+      </li>
+  </ol>
+<p>
+  ¡No importa cómo elijas colaborar, tu apoyo es fundamental para nuestro éxito! Juntos, podemos hacer grandes cosas y crear un impacto duradero en la comunidad.
+</p>
+<p>
+  Si estás interesado en ser parte de nuestro equipo de colaboradores, contáctanos hoy mismo para obtener más información sobre cómo puedes contribuir. ¡Gracias por tu apoyo y compromiso con nuestra causa!
+</p>
+<!-- google form-->
+  <a href="https://getbootstrap.com/docs/5.3/content/images/" target="_blank">
+    <button class="btn" type="buttom" style="background-color:#F3F3FD;border:1px solid #47007f">
+    Colaborar
+</button>
+  </a>  
+</div>
+<div class="col-12 col-sm-3"></div>
 
+  </div>
 
 
 
