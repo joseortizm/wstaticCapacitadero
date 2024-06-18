@@ -1,3 +1,42 @@
+body{
+    background-color: #f8f9fa;
+   }
+   nav span, footer span{
+    color: #47007f;
+   }
+   header a, nav a, footer a{
+    color: #47007f;font-family:Georgia, serif;
+   }
+     
+  .tw a, .fb a, .u2b a{
+      text-decoration: none;      
+    }
+    li a:hover{
+      text-decoration: underline;
+    }
+    nav a{
+      text-decoration: none;           
+    }
+    nav a:hover{
+     text-decoration: underline;
+    }
+    nav li{      
+      list-style: none;
+    }
+    footer li{      
+      list-style: none;
+    }
+    hr {height: 1px; background-color:#47007f;}
+  
+.centro-index{
+  margin: auto;
+  width: 60%;
+}
+ 
+
+
+
+
 /*usado en blog web*/
 /*
 .navbar{background: #563C7D;} 

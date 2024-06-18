@@ -6,134 +6,13 @@
   <title>Capacitadero.org</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Brindamos conocimiento sobre tecnología a personas con discapacidad haciendo programas gratuitos de desarrollo web que los ayude a encontrar un mejor empleo o emprender un negocio."/>
+  <meta name="description" content="Capacitadero es una organización sin fines de lucro que proporciona educación accesible en tecnología y ciencias de la computación a personas con discapacidad">
   <meta name="keywords" content="">
   <meta name="url" content="http://www.capacitadero.org"> 
   <link rel="icon" href="capacitadero.png">
   <link rel="stylesheet" href="fonts/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">  
-  <style>
-   body{
-    background-color: #f8f9fa;
-   }
-   nav span, footer span{
-    color: #47007f;
-   }
-   header a, nav a, footer a{
-    color: #47007f;font-family:Georgia, serif;
-   }
-   aside{
-    color: #212529;font-family:Georgia, serif;
-   }  
-   .text-editor{    
-    border-radius: 10px;    
-    max-width: 530px;
-    height: 166px;
-    -webkit-border-radius:10px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;    
-   }
-   .head-editor{
-    height: 26px;
-    background-color: #f8f8f8;
-    background-image: -webkit-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: -moz-linear-gradient(top, #e8e8e8, #bcbbbc);
-    background-image: linear-gradient(top, #e8e8e8, #bcbbbc);
-   }
-   .body-editor{
-    height: 120px;
-    background-color: rgba(0, 0, 0, 0.85);
-    padding: 10px;
-    color: #696969;
-    font-family: "Consolas", "Courier New", "Courier";
-    font-size: 1.45em;
-    line-height: 1.40em;
-    font-weight: 500;
-    text-align: left;
-    overflow: hidden;
-   }
-   .title-head{
-    padding: 5px 0;
-    font-family: "Lucida Grande", sans-serif;
-    font-size: 0.75em;
-    text-align: center;
-   }
-   .title{
-    margin:0px;
-    padding: 0px;
-   }      
-   .typed-cursor{
-    color:#f0f0f0;
-    opacity: 1;   
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    -ms-transition: blink 0.7s infinite;
-    -o-transition: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    }
-    @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-    }
-    @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-    }
-    @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-  .capacitadero{
-    margin:0px;
-    padding:0px;
-    color:#f0f0f0;    
-   }  
-    .tw a, .fb a, .u2b a{
-      text-decoration: none;      
-    }
-    li a:hover{
-      text-decoration: underline;
-    }
-    nav a{
-      text-decoration: none;           
-    }
-    nav a:hover{
-     text-decoration: underline;
-    }
-    nav li{      
-      list-style: none;
-    }
-    footer li{      
-      list-style: none;
-    }
-    hr {height: 1px; background-color:#47007f;}
-  /*
-    .back-img{
-      background-image:url("img/reuBienvenida2024-1.png");
-    }
-    rgb(230,230,250)
-*/ 
-.centro{
-  margin: auto;
-  width: 60%;
-}
-.contenido{
-  --bd-pink-rgb: 214,51,132;
-  background-color: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
-}
-
-#pic-blog{
-	background-image: url("img/font1.jpg"); 
-	background-repeat: no-repeat;
-	background-size: cover;
-
-}
-
- </style>
+  <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
   <header role=”banner” style="background: #f8f9fa;">
@@ -142,10 +21,10 @@
   <nav role=”navigation”>
     <ul>
       <li>
-        <span>#! </span><a href="#">Fotos</a>
+        <span>#! </span><a href="galeria.html">Conóncenos</a>
       </li>
       <li>
-        <span>#! </span><a href="blog.html">Blog</a>
+        <span>#! </span><a href="#">Blog</a>
       </li>
       <li>
         <span>#! </span><a href="#">Colaborar</a>
@@ -157,27 +36,6 @@
   </nav>
   <hr>
   <main>
-   <!-- 
-    <div class="jumbotron p-3 p-md-5 mt-2 text-white rounded" id="pic-blog">
-        <div class="col-md-6 px-0">
-          <h1 class="display-md-4 font-italic">Una Oportunidad</h1>
-          <p class="lead my-3">Cuando Capacitadero empezó, sólo estaba José y un grupo de jóvenes con ganas de aprender sobre algo llamado HTML que les ayudaría a crear sitios webs.La mayoría de ellos no tenia trabajo y un par tenia un trabajo "estable".  Era Casa de la Literatura el lugar donde realizaban las primeras clases. Sólo tenian un par de laptops y ellos eran entre 3 o 5.</p>
-          <p class="lead mb-0"><a href="una-oportunidad.html" class="text-white font-weight-bold">Continua leyendo...</a></p>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col-12 col-sm-6" style="">
-        <h2 style="">Transformando Vidas a través de la Tecnología y la Educación</h2>
-        <p class="">
-        Capacitadero es una organización sin fines de lucro que proporciona educación accesible en tecnología y ciencias de la computación a personas con discapacidad.
-        Queremos promover
-        </p> 
-      </div>
-      <div class="col-12 col-sm-6">
-        <img src="img/font1.jpg" class="img-fluid" alt="...">
-      </div>
-    </div>
-  -->
     <div class="row" style="background-color: rgb(41, 47, 54);">
       <div class="col-12 col-sm-6 p-3 p-md-5" style="">
         <h2 style="color:white"><b>Transformando Vidas a través de la Tecnología y la Educación</b></h2>
@@ -244,7 +102,7 @@
       <h2 style="color:rgb(0,0,0);" class="text-center">¡Hemos iniciado clases de Python!</h2>
       <div class="row" style="padding: 20px;">
         <div class="col-12 col-sm-4"></div>
-        <div class="centro col-12 col-sm-4 text-center pt-3 pb-3" style="background-color:rgb(230,230,250);border-radius:10px;">
+        <div class="centro-index col-12 col-sm-4 text-center pt-3 pb-3" style="background-color:rgb(230,230,250);border-radius:10px;">
           <div>
             <h3 class="">Sesión de bienvenida</h3>
             <p class="">
@@ -272,77 +130,49 @@
             </div>
           </div>
         </div>
-<!--
-        <div class="col-12 col-sm-3 mt-sm-0 mt-3">
-          <img src="img/reuBienvenida2024-1.png" alt="" class="img-fluid mx-auto d-block" style="border-radius: 10px;"> 
-        </div>
-      -->
+
         <div class="col-12 col-sm-4"></div>
       </div>
   </div>
   <div class="row pt-5 pb-5 text-center"  style="background-color: rgb(242,242,242);">
     <div class="col-12 col-sm-3"></div>
     <div class="col-12 col-sm-6">
-    <h2 style="color:rgb(0,0,0);" class="text-center">¡Únete a nosotros y haz la diferencia!</h2>
-    <p>
-    Somos una organización sin fines de lucro que proporciona educación accesible en tecnología y 
-    ciencias de la computación a personas con discapacidad. Ampliamos el acceso
-    de conocimiento a personas que no tienen esa oportunidad. Hemos realizado cursos a estudiantes con discapacidad fisica,
-    visual, auditiva y sindrome de down. Sin embargo, no podemos lograr nuestros objetivos sin el apoyo de personas como tú.
-  </p> 
-  <p>¿Te gustaría formar parte de nuestro equipo y contribuir a cambiar vidas? </p>
-  <ol>
-    <li>Contribuciones económicas: Tu generosidad nos permite llevar a cabo proyectos que impactan positivamente en 
-      nuestra comunidad. Cada donación, por pequeña que sea, marca la diferencia.</li>
-      <li>
-        Tiempo voluntario: Si tienes tiempo disponible y ganas de ayudar, ¡te necesitamos! Desde actividades de voluntariado 
-        hasta eventos y campañas, hay muchas formas de colaborar según tu disponibilidad.
-      </li>
-      <li>
-        Habilidades profesionales: ¿Eres experto en algún área que pueda beneficiar a nuestra asociación? Desde marketing y diseño 
-        hasta contabilidad y desarrollo web, valoramos tu experiencia y habilidades.
-      </li>
-  </ol>
-<p>
-  ¡No importa cómo elijas colaborar, tu apoyo es fundamental para nuestro éxito! Juntos, podemos hacer grandes cosas y crear un impacto duradero en la comunidad.
-</p>
-<p>
-  Si estás interesado en ser parte de nuestro equipo de colaboradores, contáctanos hoy mismo para obtener más información sobre cómo puedes contribuir. ¡Gracias por tu apoyo y compromiso con nuestra causa!
-</p>
-<!-- google form-->
-  <a href="https://getbootstrap.com/docs/5.3/content/images/" target="_blank">
-    <button class="btn" type="buttom" style="background-color:#F3F3FD;border:1px solid #47007f">
-    Colaborar
-</button>
-  </a>  
-</div>
-<div class="col-12 col-sm-3"></div>
-
+        <h2 style="color:rgb(0,0,0);" class="text-center">¡Únete a nosotros y haz la diferencia!</h2>
+        <p>
+        Somos una organización sin fines de lucro que proporciona educación accesible en tecnología y 
+        ciencias de la computación a personas con discapacidad. Ampliamos el acceso
+        de conocimiento a personas que no tienen esa oportunidad. Hemos realizado cursos a estudiantes con discapacidad fisica,
+        visual, auditiva y sindrome de down. Sin embargo, no podemos lograr nuestros objetivos sin el apoyo de personas como tú.
+        </p> 
+        <p>¿Te gustaría formar parte de nuestro equipo y contribuir a cambiar vidas? </p>
+         <ol>
+           <li>Contribuciones económicas: Tu generosidad nos permite llevar a cabo proyectos que impactan positivamente en 
+             nuestra comunidad. Cada donación, por pequeña que sea, marca la diferencia.</li>
+             <li>
+               Tiempo voluntario: Si tienes tiempo disponible y ganas de ayudar, ¡te necesitamos! Desde actividades de voluntariado 
+               hasta eventos y campañas, hay muchas formas de colaborar según tu disponibilidad.
+             </li>
+             <li>
+               Habilidades profesionales: ¿Eres experto en algún área que pueda beneficiar a nuestra asociación? Desde marketing y diseño 
+               hasta contabilidad y desarrollo web, valoramos tu experiencia y habilidades.
+             </li>
+         </ol>
+        <p>
+          ¡No importa cómo elijas colaborar, tu apoyo es fundamental para nuestro éxito! Juntos, podemos hacer grandes cosas y crear un impacto duradero en la comunidad.
+        </p>
+        <p>
+          Si estás interesado en ser parte de nuestro equipo de colaboradores, contáctanos hoy mismo para obtener más información sobre cómo puedes contribuir. ¡Gracias por tu apoyo y compromiso con nuestra causa!
+        </p>
+        <!-- google form-->
+          <a href="https://getbootstrap.com/docs/5.3/content/images/" target="_blank">
+            <button class="btn" type="buttom" style="background-color:#F3F3FD;border:1px solid #47007f">
+            Colaborar
+        </button>
+          </a>  
+    </div>
+    <div class="col-12 col-sm-3"></div>
   </div>
-
-
-
   </main>
-<!---
-  <div class="text-editor">
-    <div class="head-editor">
-      <div class="title-head">
-        <span class="title">
-          capacitadero.js
-        </span>
-      </div>
-    </div>
-    <div class="body-editor">
-    2<br>
-    3      
-      <span id="typed" class="capacitadero"></span>      
-    <br>4
-    </div>
-  </div>
--->
-
-
-
   <footer role=”contentinfo”>
     <ul>
       <li class="tw">
@@ -353,13 +183,7 @@
       </li>       
     </ul>
   </footer>
-<script language="JavaScript" type="text/javascript" src="lib/typed.js"></script>
-<script>
-  var typed = new Typed('#typed', {  
-    strings: ["code.capacitadero();","$('#capacitadero').html('Hola!');","$('#capacitadero').html('Creando tecnología y cambiando vidas!');"],   
-    typeSpeed: 120
-  });
-</script>
+
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
