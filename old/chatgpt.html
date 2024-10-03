@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: rgba(180, 179, 171, 0.18); /* Color de fondo */
+        }
+        .navbar-brand, .nav-link {
+            color: #800080; /* Letras moradas */
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #DA70D6; /* Color morado más claro al pasar el ratón */
+        }
+    </style>
+    <title>Navegación Moderna</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="brand-logo" aria-label="Logo de Mi Sitio">Mi Sitio</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger" aria-label="Abrir menú móvil">
+            <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="nav-link">Inicio</a></li>
+            <li><a href="#" class="nav-link">Servicios</a></li>
+            <li><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo" aria-label="Menú móvil">
+    <li><a href="#" class="nav-link">Inicio</a></li>
+    <li><a href="#" class="nav-link">Servicios</a></li>
+    <li><a href="#" class="nav-link">Contacto</a></li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+    });
+</script>
+</body>
+</html>
+
+
+
+<!--
+<div class="layout-responsive__header">
+    <div class="page-header" style="top: 0;">
+        <div class="page-header__inner">
+            <div class="page-header__logo">
+                <a href="https://instapage.com">
+                    <img class="header-logo-image" src="https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/instapage-logo.svg" alt="instapage logo" width="144" height="36">
+                    <img class="header-logo-image header-logo-image--dark" src="https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/instapage-logo-dark.svg" alt="instapage logo" width="144" height="36">
+                </a>
+            </div>
+            <div class="page-header__menu">
+                <nav class="header-menu header-menu--navigation">
+                    <div class="header-menu__item has-submenu">
+                        <span class="header-menu__link is-submenu-trigger">Platform</span>
+                        <div class="header-menu__submenu">
+                            <div class="header-menu__submenu-column">
+                                <div class="header-menu__submenu-title">Platform</div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/all-product-overview">Instapage Overview</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/integrations">Integrations</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/features">Features</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/security">Security</a>
+                            </div>
+                            <div class="header-menu__submenu-column">
+                                <div class="header-menu__submenu-title">Products</div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/landing-page-builder">Landing Pages</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/personalization">Personalization</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/conversion-optimization">Experimentation</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/ai-content">AI Content</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/admap">AdMap®</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/products/team-collaboration">Collaboration</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-menu__item has-submenu">
+                        <span class="header-menu__link is-submenu-trigger">Solutions</span>
+                        <div class="header-menu__submenu">
+                            <div class="header-menu__submenu-column">
+                                <div class="header-menu__submenu-title">By Channel</div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/ppc-search-ads">For Search Ads</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/social-ads">For Social Ads</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/display-advertising">For Display Ads</a>
+                            </div>
+                            <div class="header-menu__submenu-column">
+                                <div class="header-menu__submenu-title">By Use Case</div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/ecommerce">For Ecommerce</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/retargeting">For Retargeting</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/lead-generation">For Lead Gen</a>
+                            </div>
+                            <div class="header-menu__submenu-column">
+                                <div class="header-menu__submenu-title">By Industry</div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/education">Education</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/solutions/finance">Finance</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/solutions/real-estate">Real Estate</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/en/solutions/insurance">Insurance</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-menu__item"><a class="header-menu__link" href="https://instapage.com/customer-stories">Customer stories</a></div>
+                    <div class="header-menu__item"><a class="header-menu__link" href="https://instapage.com/plans">Pricing</a></div>
+                    <div class="header-menu__item has-submenu">
+                        <span class="header-menu__link is-submenu-trigger">Resources</span>
+                        <div class="header-menu__submenu">
+                            <div class="header-menu__submenu-column">
+                                <a class="header-menu__submenu-link" href="https://instapage.com/resources">Resources Library</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/product-updates">Product Updates</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/blog">Blog</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/webinars">Webinars</a>
+                            </div>
+                            <div class="header-menu__submenu-column header-menu__submenu-column--green">
+                                <div class="header-menu__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/landing-page.webp 1x, https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/landing-page@2x.webp 2x">
+                                        <source type="image/png" srcset="https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/landing-page.png 1x, https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/landing-page@2x.png 2x">
+                                        <img class="header-menu__screenshot" src="https://cdn.mrkhub.com/instapage-landings-frontend/111/images/_modules/page-header/landing-page.png" alt="Landing page" loading="lazy" width="364" height="230">
+                                    </picture>
+                                </div>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/what-is-a-landing-page">What is a Landing Page?</a>
+                                <a class="header-menu__submenu-link" href="https://instapage.com/blog/what-is-ai-marketing">What is AI Marketing?</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="page-header__group">
+                <div class="header-menu header-menu--action">
+                    <div class="header-menu__item"><a class="header-menu__link" href="https://app.instapage.com/auth/login/">Login</a></div>
+                    <div class="header-menu__item">
+                        <a class="button button--bordered button--white" href="https://instapage.com/plans">Get started</a>
+                    </div>
+                </div>
+                <div class="page-header__burger js-mobile-menu-trigger">
+                    <div class="page-header__lines"></div>
+                </div>
+                <div class="page-header__overlay js-mobile-menu-overlay"></div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #808080; /* Plomo */
+        }
+        .navbar {
+            background-color: #333; /* Color de fondo de la navbar */
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #800080; /* Morado */
+        }
+        .navbar-brand:hover, .navbar-nav .nav-link:hover {
+            color: #DA70D6; /* Color morado más claro al pasar el ratón */
+        }
+    </style>
+    <title>Navegación Moderna</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Mi Sitio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #B0BEC5; /* Fondo plomo */
+        }
+        .navbar a {
+            color: #6A1B9A; /* Color morado */
+            font-weight: bold;
+        }
+        .hero-section {
+            background-color: #6A1B9A; /* Fondo morado */
+            color: white;
+            padding: 60px 30px;
+            border-radius: 0 0 50px 50px;
+        }
+        .hero-button {
+            background-color: #B0BEC5; /* Fondo plomo */
+            color: #6A1B9A; /* Color morado */
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+        .courses-section {
+            background-color: #B0BEC5; /* Fondo plomo */
+            text-align: center;
+            padding: 40px 0;
+        }
+        .benefit-box {
+            background-color: #E1BEE7; /* Morado suave */
+            color: #6A1B9A; /* Color morado */
+            padding: 30px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .footer {
+            background-color: #6A1B9A; /* Fondo morado */
+            color: #B0BEC5; /* Letras plomas */
+            padding: 40px 0;
+        }
+        .footer h5 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+     <!--
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Mi Proyecto Web</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Conócenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ingresar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+-->
+    <!-- Sección principal -->
+     <!--    <div class="container hero-section text-center">
+        <h1>Da el siguiente paso para mejorar tu profesión</h1>
+        <p class="lead">Somos una organización sin fines de lucro que da clases de programación a estudiantes como tú.</p>
+        <a href="#" class="btn hero-button">Regístrate</a>
+        <div class="mt-4">
+            <img src="https://via.placeholder.com/400" alt="Estudiantes en clase" class="img-fluid rounded-circle">
+        </div>
+    </div>
+-->
+    <!-- Sección de cursos --> 
+     <!--
+    <div class="courses-section">
+        <h2>Aprender sobre cursos de programación y tecnología</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefit-box">✔ Aprenderás habilidades valiosas.</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box">✔ Mejora tus oportunidades laborales.</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box">✔ Conéctate con otros estudiantes.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+    <!-- Pie de página --> <!--
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces Principales</h5>
+                    <ul>
+                        <li><a href="#">Enlace 1</a></li>
+                        <li><a href="#">Enlace 2</a></li>
+                        <li><a href="#">Enlace 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Más Información</h5>
+                    <ul>
+                        <li><a href="#">Enlace 4</a></li>
+                        <li><a href="#">Enlace 5</a></li>
+                        <li><a href="#">Enlace 6</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="#">Enlace 7</a></li>
+                        <li><a href="#">Enlace 8</a></li>
+                        <li><a href="#">Enlace 9</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+-->
+<!--
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Web</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #B0BEC5; /* Fondo plomo */
+        }
+        .navbar a {
+            color: #6A1B9A; /* Color morado */
+        }
+        .hero-section {
+            background-color: #6A1B9A; /* Fondo morado */
+            color: white;
+            padding: 40px;
+        }
+        .hero-button {
+            background-color: #B0BEC5; /* Fondo plomo */
+            color: #6A1B9A; /* Color morado */
+        }
+        .courses-section {
+            background-color: #B0BEC5; /* Fondo plomo */
+            text-align: center;
+            padding: 40px 0;
+        }
+        .benefit-box {
+            background-color: #E1BEE7; /* Morado suave */
+            color: #6A1B9A; /* Color morado */
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #6A1B9A; /* Fondo morado */
+            color: #B0BEC5; /* Letras plomas */
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Mi Proyecto Web</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Conócenos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ingresar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <div class="container hero-section">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Da el siguiente paso para mejorar tu profesión</h1>
+                <p>Somos una organización sin fines de lucro que da clases de programación a estudiantes como tú.</p>
+                <a href="#" class="btn hero-button">Regístrate</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/400" alt="Estudiantes en clase" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de cursos -->
+    <div class="courses-section">
+        <h2>Aprender sobre cursos de programación y tecnología</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="benefit-box">Beneficio 1: Aprenderás habilidades valiosas.</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box">Beneficio 2: Mejora tus oportunidades laborales.</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box">Beneficio 3: Conéctate con otros estudiantes.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces Principales</h5>
+                    <ul>
+                        <li><a href="#">Enlace 1</a></li>
+                        <li><a href="#">Enlace 2</a></li>
+                        <li><a href="#">Enlace 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Más Información</h5>
+                    <ul>
+                        <li><a href="#">Enlace 4</a></li>
+                        <li><a href="#">Enlace 5</a></li>
+                        <li><a href="#">Enlace 6</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="#">Enlace 7</a></li>
+                        <li><a href="#">Enlace 8</a></li>
+                        <li><a href="#">Enlace 9</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+-->
