@@ -14,7 +14,6 @@
         background-color: #812FFF;
         color: #FFFFFF;
         border-radius: 50px;
-        width: 250px;
         }
        
       .btn-custom:hover{color:#FFFFFF;
@@ -68,19 +67,31 @@
       cursor: pointer;
       text-decoration: underline !important; 
     }
+
+   .custom-h1 {
+    font-size: 5rem; 
+    }
+   
+   /* `md` applies to small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) {
+    .custom-h1 {
+    font-size: 3rem; 
+    } 
+  }
+
  
 
     </style>
     <title>Capacitadero.org</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand fs-1" href="index.html">Capacitadero();</a> <!--validar con glo el tam-> mantener el original-->
+<nav class="navbar navbar-expand-lg navbar-dark ps-sm-5 ps-0 pe-sm-5">
+    <div class="container-fluid ms-sm-5 ms-0 me-sm-5"> <!--CONTINUAR MODF TAM Titulo-->
+      <a class="navbar-brand ms-sm-5 ms-0" href="index.html">Capacitadero();</a> <!--validar con glo el tam-> mantener el original-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end pe-sm-5" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link text-dark links-navbar" href="http://edu.capacitadero.org" target="_blank">Ingresar</a>
@@ -93,18 +104,37 @@
     </div>
   </nav>
   <main>
-    <div class="row pb-sm-3 pt-sm-3" style="background-color:#4B0E7D;">
-      <div class="col-12 col-sm-6 p-3 p-sm-5 mt-3 text-sm-start text-center">
-        <h2 style="color:white"><b>Transformando Vidas a través de la Tecnología y la Educación</b></h2>
-        <p class="lead" style="color: white;">
+
+    <div class="row justify-content-center pb-sm-5 pt-sm-5 pt-5 pb-5"  style="background-color:#4B0E7D;">
+      <div class="col-10 col-sm-6">
+        <h1 style="color:white" class="fw-semibold custom-h1">Transformando vidas a través de la tecnología y la educación</h1>
+        <p class="fs-2" style="color: white;">
         Somos una organiza sin fines de lucro con el objetivo de diseñar y enseñar cursos accesibles para todos. Registrate y explora los cursos que tenemos para ti.
         </p> 
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4phXS2lXC2ELU4Qu0nStHW2gtKzYU8dJR7qw9w9EitYyFcw/viewform?usp=sf_link" target="_blank" class="btn btn-custom">Regístrate</a>
+      </div>
+       <div class="col-10 col-sm-4 mt-3 mt-sm-0">
+        <img src="img/prueba.png" class="img-fluid float-end rounded" alt="Foto de estudiantes con discapacidad programando">
+      </div>
+
+
+    </div>
+
+<!--
+    <div class="row pb-sm-5 pt-sm-5 ps-sm-5" style="background-color:#4B0E7D;">
+      <div class="col-12 col-sm-6 p-3 p-sm-5 mt-3 text-sm-start text-center">
+        <h1 style="color:white" class="ps-sm-5 fw-semibold custom-h1">Transformando vidas a <br> través de la tecnología <br>y la educación</h1>
+        <p class="lead ps-sm-5" style="color: white;">
+        Somos una organiza sin fines de lucro con el objetivo de diseñar y enseñar cursos accesibles para todos. Registrate y explora los cursos que tenemos para ti.
+        </p> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4phXS2lXC2ELU4Qu0nStHW2gtKzYU8dJR7qw9w9EitYyFcw/viewform?usp=sf_link" target="_blank" class="btn btn-custom ms-sm-5 ms-0">Regístrate</a>
       </div>
       <div class="col-12 col-sm-6">
         <img src="img/prueba.png" class="img-fluid rounded" alt="Foto de estudiantes con discapacidad programando">
       </div>
     </div>
+-->
+
 
     <div class="row pt-5 justify-content-center">
       <h2 style="color:#563C7D;" class="text-center">Aprende sobre programación, ciencias de la <br>computación y tecnología.</h2>
